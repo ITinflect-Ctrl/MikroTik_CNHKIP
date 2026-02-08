@@ -16,15 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Optional: Clean Result directory before processing
-      # - name: Clean Result directory (optional)
-      #   run: rm -rf Result/* || true
-
       - name: Make scripts executable
-        run: chmod +x ./allcn_ip_list.sh
+        run: chmod +x ./allcn-ip-list.sh
 
       - name: Run main script
-        run: ./allcn_ip_list.sh
+        run: ./allcn-ip-list.sh
 
       - name: Show Result directory contents (for debugging)
         run: ls -al Result || echo "Result directory does not exist"
