@@ -1,9 +1,9 @@
 /log info "Loading CN-HK ipv4 address list"
+/ip firewall address-list remove [find list=CN]
+/ip firewall address-list
 :do { add address=1.36.0.0/16 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=1.64.0.0/15 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=5.254.128.0/19 list=CN timeout=0 comment=CN } on-error={}
-/ip firewall address-list remove [find list=CN]
-/ip firewall address-list
 :do { add address=14.0.128.0/17 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=14.1.20.0/22 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=14.102.184.0/22 list=CN timeout=0 comment=CN } on-error={}

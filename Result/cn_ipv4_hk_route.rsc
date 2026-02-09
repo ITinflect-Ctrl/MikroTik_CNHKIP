@@ -1,10 +1,10 @@
 /log info "Loading CN-HK ipv4 address routing"
-:do { add dst-address=1.36.0.0/16 action=lookup disabled=no table=CN comment=CN } on-error={}
-:do { add dst-address=1.64.0.0/15 action=lookup disabled=no table=CN comment=CN } on-error={}
 /routing rule remove [find table=CN]
 /routing table remove [find name=CN]
 /routing table add name=CN fib disabled=no
 /routing rule
+:do { add dst-address=1.36.0.0/16 action=lookup disabled=no table=CN comment=CN } on-error={}
+:do { add dst-address=1.64.0.0/15 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=5.254.128.0/19 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=14.0.128.0/17 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=14.1.20.0/22 action=lookup disabled=no table=CN comment=CN } on-error={}

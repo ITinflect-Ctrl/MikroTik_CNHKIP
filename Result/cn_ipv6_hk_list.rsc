@@ -1,9 +1,9 @@
 /log info "Loading CN-HK ipv6 address list"
+/ipv6 firewall address-list remove [find list=CN]
+/ipv6 firewall address-list
 :do { add address=2001:2e0::/35 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:2e0:2000::/35 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:2e0:4000::/34 list=CN timeout=0 comment=CN } on-error={}
-/ipv6 firewall address-list remove [find list=CN]
-/ipv6 firewall address-list
 :do { add address=2001:2e0:8000::/33 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:7fa:0:1::/64 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:ce0::/32 list=CN timeout=0 comment=CN } on-error={}
