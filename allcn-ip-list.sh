@@ -101,10 +101,10 @@ sed -i 's/$/&\ list=CN timeout=0 comment=CN } on-error={}/g' ${cn_ipv4_list_file
 sed -i '1 i/log info "Loading CN ipv4 address list"' ${cn_ipv4_list_filename}
 
 # 在文件第5行前插入新行"/ip firewall address-list remove [/ip firewall address-list find list=cn]"  list
-sed -i '5 i/ip firewall address-list remove [find list=CN]' ${cn_ipv4_list_filename}
+sed -i '2 i/ip firewall address-list remove [find list=CN]' ${cn_ipv4_list_filename}
 
 # 在文件第6行前插入新行"/ip firewall address-list"  list
-sed -i '6 i/ip firewall address-list' ${cn_ipv4_list_filename}
+sed -i '3 i/ip firewall address-list' ${cn_ipv4_list_filename}
 
 
 
@@ -120,16 +120,16 @@ sed -i 's/$/&\ action=lookup disabled=no table=CN comment=CN } on-error={}/g' ${
 sed -i '1 i/log info "Loading CN ipv4 address routing"' ${cn_ipv4_route_filename}
 
 # 在文件第4行前插入新行"/routing rule remove [/routing rule find table=$list]"  route
-sed -i '4 i/routing rule remove [find table=CN]' ${cn_ipv4_route_filename}
+sed -i '2 i/routing rule remove [find table=CN]' ${cn_ipv4_route_filename}
 
 # 在文件第5行前插入新行"/routing table remove [/routing table find name=$list]]"  route
-sed -i '5 i/routing table remove [find name=CN]' ${cn_ipv4_route_filename}
+sed -i '3 i/routing table remove [find name=CN]' ${cn_ipv4_route_filename}
 
 # 在文件第6行前插入新行"/routing table add name=$list fib disabled=no"  route
-sed -i '6 i/routing table add name=CN fib disabled=no' ${cn_ipv4_route_filename}
+sed -i '4 i/routing table add name=CN fib disabled=no' ${cn_ipv4_route_filename}
 
 # 在文件第7行前插入新行"/routing rule"  route
-sed -i '7 i/routing rule' ${cn_ipv4_route_filename}
+sed -i '5 i/routing rule' ${cn_ipv4_route_filename}
 
 
 
@@ -146,10 +146,10 @@ sed -i 's/$/&\ list=CN timeout=0 comment=CN } on-error={}/g' ${cn_ipv6_list_file
 sed -i '1 i/log info "Loading CN ipv6 address list"' ${cn_ipv6_list_filename}
 
 # 在文件第5行前插入新行"/ipv6 firewall address-list remove [find list=CN]"  list
-sed -i '5 i/ipv6 firewall address-list remove [find list=CN]' ${cn_ipv6_list_filename}
+sed -i '2 i/ipv6 firewall address-list remove [find list=CN]' ${cn_ipv6_list_filename}
 
 # 在文件第6行前插入新行"/ipv6 firewall address-list"  list
-sed -i '6 i/ipv6 firewall address-list' ${cn_ipv6_list_filename}
+sed -i '3 i/ipv6 firewall address-list' ${cn_ipv6_list_filename}
 
 
 
@@ -166,10 +166,10 @@ sed -i 's/$/&\ list=CN timeout=0 comment=CN } on-error={}/g' ${cn_ipv4_hk_list_f
 sed -i '1 i/log info "Loading CN-HK ipv4 address list"' ${cn_ipv4_hk_list_filename}
 
 # 在文件第5行前插入新行"/ip firewall address-list remove [/ip firewall address-list find list=cn]"  list
-sed -i '5 i/ip firewall address-list remove [find list=CN]' ${cn_ipv4_hk_list_filename}
+sed -i '2 i/ip firewall address-list remove [find list=CN]' ${cn_ipv4_hk_list_filename}
 
 # 在文件第6行前插入新行"/ip firewall address-list"  list
-sed -i '6 i/ip firewall address-list' ${cn_ipv4_hk_list_filename}
+sed -i '3 i/ip firewall address-list' ${cn_ipv4_hk_list_filename}
 
 
 
@@ -186,16 +186,16 @@ sed -i 's/$/&\ action=lookup disabled=no table=CN comment=CN } on-error={}/g' ${
 sed -i '1 i/log info "Loading CN-HK ipv4 address routing"' ${cn_ipv4_hk_route_filename}
 
 # 在文件第4行前插入新行"/routing rule remove [/routing rule find table=$list]"  route
-sed -i '4 i/routing rule remove [find table=CN]' ${cn_ipv4_hk_route_filename}
+sed -i '2 i/routing rule remove [find table=CN]' ${cn_ipv4_hk_route_filename}
 
 # 在文件第5行前插入新行"/routing table remove [/routing table find name=$list]]"  route
-sed -i '5 i/routing table remove [find name=CN]' ${cn_ipv4_hk_route_filename}
+sed -i '3 i/routing table remove [find name=CN]' ${cn_ipv4_hk_route_filename}
 
 # 在文件第6行前插入新行"/routing table add name=$list fib disabled=no"  route
-sed -i '6 i/routing table add name=CN fib disabled=no' ${cn_ipv4_hk_route_filename}
+sed -i '4 i/routing table add name=CN fib disabled=no' ${cn_ipv4_hk_route_filename}
 
 # 在文件第7行前插入新行"/routing rule"  route
-sed -i '7 i/routing rule' ${cn_ipv4_hk_route_filename}
+sed -i '5 i/routing rule' ${cn_ipv4_hk_route_filename}
 
 
 
@@ -212,10 +212,10 @@ sed -i 's/$/&\ list=CN timeout=0 comment=CN } on-error={}/g' ${cn_ipv6_hk_list_f
 sed -i '1 i/log info "Loading CN-HK ipv6 address list"' ${cn_ipv6_hk_list_filename}
 
 # 在文件第5行前插入新行"/ipv6 firewall address-list remove [find list=CN]"  list
-sed -i '5 i/ipv6 firewall address-list remove [find list=CN]' ${cn_ipv6_hk_list_filename}
+sed -i '2 i/ipv6 firewall address-list remove [find list=CN]' ${cn_ipv6_hk_list_filename}
 
 # 在文件第6行前插入新行"/ipv6 firewall address-list"  list
-sed -i '6 i/ipv6 firewall address-list' ${cn_ipv6_hk_list_filename}
+sed -i '3 i/ipv6 firewall address-list' ${cn_ipv6_hk_list_filename}
 
 
 
