@@ -40,9 +40,9 @@
 
 ```routeros
 /system scheduler
-add name=update-cn-ip-list interval=30d start-date=2026-02-01 start-time=03:00:00 \
+add name=update-cn-ip-list interval=7d start-date=2026-02-01 start-time=03:00:00 \
 on-event="/tool/fetch url=\"https://raw.githubusercontent.com/ITinflect-Ctrl/MikroTik_CNHKIP/main/Result/cn_ipv4_list.rsc\" mode=https dst-path=cn_ipv4_list.rsc\r\
-\n:delay 5s\r\
+\n:delay 15s\r\
 \n/import cn_ipv4_list.rsc\r\
 \n/log info \"CN IP list updated successfully\""
 ```
