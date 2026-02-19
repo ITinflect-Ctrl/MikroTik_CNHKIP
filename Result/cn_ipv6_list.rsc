@@ -76,7 +76,6 @@
 :do { add address=2001:df4:e141::/48 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:df4:e142::/47 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:df5:1440::/48 list=CN timeout=0 comment=CN } on-error={}
-:do { add address=2001:df5:2080::/48 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:df5:2fc0::/48 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:df5:44c0::/48 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2001:df5:4740::/48 list=CN timeout=0 comment=CN } on-error={}
