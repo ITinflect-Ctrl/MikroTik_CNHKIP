@@ -192,6 +192,19 @@ add dst-address=0.0.0.0/0 gateway=国际网关 routing-mark=Other-Route
 
 ---
 
+### 掩码格式转换
+```python
+# 将 192.168.0.0/24 前缀列表格式 转换成 192.168.0.0 255.255.255.0 点分十进制格式
+# 首先将 ipv4-cn.txt 文件名修改成 ipprefix.txt, 并将 convert_ipmask.py 文件放在同一个目录中，执行命令：
+python -m venv vipmask
+python convert_ipmask.py
+# 执行结果后将新格式会保存到 ipmask.txt 文件中
+```
+
+```
+
+```
+
 ## 📊 性能参考
 
 | 设备型号 | RAM | 导入时间 | 状态 |
