@@ -2,19 +2,24 @@ name: MikroTik_CNHKIP_Scripts
 
 on:
   schedule:
-    - cron: "0 20 * * 3" # Run every Monday at 00:00 UTC
+    - cron: "0 20 * * 3" # 每周三 20:00 (UTC)
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: mikrotik-cnhkip-update
+  cancel-in-progress: true
+
 jobs:
   run-scripts:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Make scripts executable
         run: chmod +x ./allcn-ip-list.sh
@@ -26,9 +31,18 @@ jobs:
         run: ls -al Result || echo "Result directory does not exist"
 
       - name: Auto-commit new Result files to repository
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
           git add Result/
-          git diff --staged --quiet || git commit -m "🤖 Auto update IP list - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/CodiFelix/MikroTik_CNHKIP.git HEAD:main
+
+          # 没有变更就退出
+          git diff --staged --quiet && exit 0
+
+          git commit -m "Auto update IP list - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+
+          # 先同步再推送，避免被拒绝
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
