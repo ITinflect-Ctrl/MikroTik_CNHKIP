@@ -753,7 +753,6 @@
 :do { add address=2402:50a0::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:5180::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:51a0::/32 list=CN timeout=0 comment=CN } on-error={}
-:do { add address=2402:52c0::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:5340::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:5820::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:5880::/32 list=CN timeout=0 comment=CN } on-error={}
