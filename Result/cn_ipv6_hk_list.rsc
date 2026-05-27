@@ -144,7 +144,6 @@
 :do { add address=2001:df2:da40::/48 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2001:df2:dc80::/48 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2001:df2:f080::/48 list=HK timeout=0 comment=HK } on-error={}
-:do { add address=2001:df3:1d80::/48 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2001:df3:1e80::/48 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2001:df3:1f00::/48 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2001:df3:2d80::/48 list=HK timeout=0 comment=HK } on-error={}
@@ -339,7 +338,6 @@
 :do { add address=2400:ef00::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2400:f000::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2400:f100::/32 list=HK timeout=0 comment=HK } on-error={}
-:do { add address=2400:f700::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2400:f800::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2400:f880::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2401:c0::/32 list=HK timeout=0 comment=HK } on-error={}
@@ -582,8 +580,6 @@
 :do { add address=2404:1a40::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:2480::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:2a80::/32 list=HK timeout=0 comment=HK } on-error={}
-:do { add address=2404:2b40::/32 list=HK timeout=0 comment=HK } on-error={}
-:do { add address=2404:2fc0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3500::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3880::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3e40::/32 list=HK timeout=0 comment=HK } on-error={}
@@ -652,7 +648,6 @@
 :do { add address=2405:d1c0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2405:d6c0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2405:d800::/32 list=HK timeout=0 comment=HK } on-error={}
-:do { add address=2405:dac0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2405:dfc0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2405:e440::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2405:e500::/32 list=HK timeout=0 comment=HK } on-error={}
