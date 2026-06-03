@@ -500,6 +500,7 @@
 :do { add address=2402:5aa0::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:5c20::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:5dc0::/32 list=HK timeout=0 comment=HK } on-error={}
+:do { add address=2402:6120::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6140::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6a80::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6e40::/32 list=HK timeout=0 comment=HK } on-error={}
@@ -580,6 +581,7 @@
 :do { add address=2404:1a40::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:2480::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:2a80::/32 list=HK timeout=0 comment=HK } on-error={}
+:do { add address=2404:2b40::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3500::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3880::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2404:3e40::/32 list=HK timeout=0 comment=HK } on-error={}
