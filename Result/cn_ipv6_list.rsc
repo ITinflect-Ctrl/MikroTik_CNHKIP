@@ -771,6 +771,7 @@
 :do { add address=2402:6060::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:6280::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:62c0::/32 list=CN timeout=0 comment=CN } on-error={}
+:do { add address=2402:6320::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:64c0::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:66c0::/32 list=CN timeout=0 comment=CN } on-error={}
 :do { add address=2402:6740::/32 list=CN timeout=0 comment=CN } on-error={}

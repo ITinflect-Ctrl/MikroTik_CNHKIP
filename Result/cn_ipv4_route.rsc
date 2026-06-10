@@ -6358,6 +6358,7 @@
 :do { add dst-address=162.4.168.0/23 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=162.4.198.0/23 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=162.4.202.0/23 action=lookup disabled=no table=CN comment=CN } on-error={}
+:do { add dst-address=162.4.230.0/23 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=162.14.0.0/16 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=162.105.0.0/16 action=lookup disabled=no table=CN comment=CN } on-error={}
 :do { add dst-address=163.0.0.0/16 action=lookup disabled=no table=CN comment=CN } on-error={}
