@@ -927,7 +927,6 @@
 :do { add dst-address=103.119.44.0/22 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.119.128.0/22 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.119.132.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
-:do { add dst-address=103.119.137.0/24 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.119.174.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.120.24.0/22 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.120.80.0/22 action=lookup disabled=no table=HK comment=HK } on-error={}
