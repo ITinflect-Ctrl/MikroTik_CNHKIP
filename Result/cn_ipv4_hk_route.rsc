@@ -1023,6 +1023,7 @@
 :do { add dst-address=103.144.244.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.144.246.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.145.58.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
+:do { add dst-address=103.145.60.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.145.72.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.145.90.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
 :do { add dst-address=103.145.104.0/23 action=lookup disabled=no table=HK comment=HK } on-error={}
