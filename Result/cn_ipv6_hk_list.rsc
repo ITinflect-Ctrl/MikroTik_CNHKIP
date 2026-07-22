@@ -499,6 +499,7 @@
 :do { add address=2402:6120::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6140::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:66a0::/32 list=HK timeout=0 comment=HK } on-error={}
+:do { add address=2402:6760::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6a80::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6e40::/32 list=HK timeout=0 comment=HK } on-error={}
 :do { add address=2402:6f00::/32 list=HK timeout=0 comment=HK } on-error={}
